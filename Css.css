@@ -1,157 +1,184 @@
-html{
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
   box-sizing: border-box;
 }
 
-* , *::after , *::before{
-    box-sizing:inherit;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-body{
-  margin:0px;height:395%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 {
- margin:5px;
+:root {
+  --border: #00000005;
 }
 
-#main{
-  width:900px;
-  margin:auto;
-  height:100%;
+form {
+  width: 100%;
+  height: 100%;
 }
 
-#maindiv{
-  float:left;
-  width:100%;
-  height:100%;
-  border:2px solid #00000005;
-  border-radius:10px;
+.page-wrapper {
+  width: 900px;
+  height: 100%;
+  margin: auto;
 }
 
-#head{
-  float:left;
-  height:100px;
-  border-bottom:1px solid #00000005;
-  padding:5px;
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
 }
 
-#headimg{
-  float:left;
-  width:55%;
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#logo{
-  width:100%;
-  height:100%;
+.headerLogo {
+  width: 55%;
 }
 
-#headsen{
-  float: left;
-  width: 45%;
+.headerText {
   font-size: 35px;
   font-weight: bold;
   text-decoration: underline;
-  padding: 2.5% 0% 0% 3%;
-  color: #FF0000;
+  color: #ff0000;
 }
 
-#headbelow{
-  float:left;
-  padding:5px;
-  border-bottom:1px solid #00000005;
+.headerBankInstruction {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 55% 40%;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
 }
 
-#headbsen{
-  float:left;
-  width:55%;
-  margin-top:10px;
+.headerInstruction {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-#headdata{
-  float:left;
-  width:45%;
+.headerBankData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-#headblackheading{
-  background-color:black;
-  color:white;
-  font-size:23px;
-  margin:5px 0px 5px 0px;
+.headerBankHeading {
+  background-color: black;
+  color: white;
+  font-size: 23px;
 }
 
-#headform{
-  font-size:17px;
+.headerBankForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-#datain{
-  float:left;
-  width:100%;
-  margin:3px 0px 3px 0px;
+.headerBankFormInputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 35% 40%;
 }
 
-#data{
-  float:left;
-  width:25%;
+.headerBankFormInputsLabel {
+  width: 100%;
 }
 
-#datainput{
-  float:left;
-  width:30%;
+.headerBankFormInput {
+  width: 100%;
 }
 
-#sign{
-  float:left;
-  width:70%;
-  text-align:right;
+.headerBankFormSignature {
+  width: 100%;
+  text-align: right;
 }
 
-#perhead{
-  float:left;
-  width:100%;
-  margin-top:5px;
+.form {
+  width: 100%;
 }
 
-#phead{
-  background-color:red;
-  color:white;
-  font-size:25px;
-  font-weight:bold;
+.formHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.formHeaderText {
+  background-color: red;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
   padding-left: 5px;
 }
 
-#form{
-  float:left;
-  width:100%;
-  padding:5px;
+.formColumn {
+  width: 100%;
+  display: grid;
+  margin: 10px 0px;
+  grid-template-columns: 20% 39% 39%;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-#col{
-  float:left;
-  width:100%;
-  margin:10px 0px 10px 0px;
+.formInput {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
 }
 
-#title{
-  float:left;
-  width:20%;
+input[type="text"] {
+  width: 100%;
 }
 
-#titleinput{
-  float:left;
-  width:40%;
-  text-align:center;
+.notHundredPercent {
+  width: auto !important;
 }
 
-#perform{
-  float:left;
-  width:100%;
-  margin-top:5px;
+.formButton {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
-#fhead{
-  background-color:grey;
-  color:white;
-  font-size:25px;
-  font-weight:bold;
+.formHeaderText-Gray {
+  background-color: grey;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
   padding-left: 5px;
 }
